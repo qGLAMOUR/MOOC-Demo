@@ -12,6 +12,8 @@ def get_index_html():
     url = "https://www.icourse163.org/"
     # ssl._create_default_https_context = ssl._create_unverified_context
     r = requests.get(url)
+    print(r.status_code)
+    print(r.apparent_encoding)
     print(r.text)
 
 
